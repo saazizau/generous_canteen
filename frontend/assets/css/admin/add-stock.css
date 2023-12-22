@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #343942;
+}
+
+main {
+    color: rgba(217, 217, 217, 1);
+    width: 100%;
+    height: calc(100vh-(7.8rem));
+}
+
+footer {
+    margin: 0;
+    padding: 0;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+/*=====================[HEADER]=====================*/
+.header-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2.69rem;
+    margin-left: 4.88rem;
+    margin-right: 4.88rem;
+}
+
+.logo-container {
+    width: 3.8125rem;
+    height: 5.3125rem;
+    overflow: hidden;
+    margin-bottom: 0.75rem;
+}
+
+.left-item {
+    display: block;
+    margin-left: auto;
+    margin-right: 2.25rem;
+    color: #D9D9D9;
+
+    text-align: right;
+    font-family: Inter;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+img.logo {
+    width: 100%; /* Make the image fill the container */
+    height: 100%; /* Make the image fill the container */
+    object-fit: cover;
+}
+
+img.logout {
+    width: 4.0625rem;
+    height: 4.0625rem;
+}
+
+
+.title {
+    margin: 0;
+    padding-left: 2.56rem;
+
+    color: #D9D9D9;
+
+    font-family: Inter;
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    margin: 0;
+}
+/*==================================================*/
+
+/*======================[MAIN]======================*/
+.main-container {
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 5.69rem;
+    margin-bottom: 5.69rem;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1.81rem;
+    width: 100%;
+    height: 560px;
+    
+}
+
+.input-container {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 2.44rem;
+    margin-top: 3.7rem;
+}
+
+.label {
+    color: #D9D9D9;
+    
+    font-family: Inter;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;    
+
+    margin-bottom: 0.94rem;
+    margin-left: 1.94rem;
+}
+
+.input {
+    min-width: 17rem;
+    max-width: 50rem;
+
+
+    height: 3.5rem;
+    border-radius: 6.25rem;
+    background: #D9D9D9;
+    border: none;
+    align-items: center;
+
+    padding-left: 1.59rem;
+    padding-right: 1.59rem;
+
+    font-family: Inter;
+    font-size: 1.5rem;
+    font-style: bold;
+    font-weight: 400;
+    line-height: normal;
+    align-items: center;
+}
+
+.input#id {
+    background: #8A8A8A;
+}
+
+.input::placeholder {
+    font-style: italic;
+}
+
+.input#id:focus {
+    outline: none;
+    border: none;
+    /* Additional styles for the active state */
+}
+
+
+.input:focus {
+    outline: 3px;
+    outline-color: #fbc95e;
+    outline-style: solid;
+    border: none;
+    /* Additional styles for the active state */
+}
+
+.button {
+    display: flex;
+    width: auto;
+    height: 3.5rem;
+    padding: 1.81rem;
+
+    color: #151515;
+
+    font-family: Inter;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    text-decoration: none;
+    border: none;
+    border-radius: 0.1rem;
+    background: #D9D9D9;
+    justify-content: center;
+    align-items: center;
+
+    border: none;
+
+    transition: background-color 0.3s ease;
+    transition: color 0.3s ease;
+}
+
+.button#Back {
+    color: #D9D9D9;
+    background: none;
+    
+    transition: color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #D89B14;
+    color: #D9D9D9;
+    cursor: pointer;
+
+    transition: background-color 0.3s ease;
+    transition: color 0.3s ease;
+}
+
+.button#Back:hover {
+    color: #D89B14;
+    cursor: pointer;
+
+    transition: color 0.3s ease;
+}
+
+@media (max-width: 1000px) {
+    .form-container {
+        height: 800px;
+    }
+
+    .input-container {
+        width: 100%;
+    }    
+}
+/*==================================================*/
