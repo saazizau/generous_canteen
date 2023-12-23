@@ -53,7 +53,6 @@ function addItem(){
         .then(response=>response.json())
         .then(data => {
             if(data['status'] == 'success'){
-                console.log("HEHEHE");
                 showAlert(`${data['massage']}`, function(result){
                     if(result){
                         location.reload()
