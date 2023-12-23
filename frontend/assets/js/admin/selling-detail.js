@@ -59,3 +59,11 @@ function print(){
 function getBack(){
     window.location.href = "index.php" 
 }
+
+function getLogout(){
+    showConfirm("Apakah anda yakin untuk Logout?", function(result){
+        if(result){
+            window.location.href = "../../api/logout.php";
+        }
+    })
+}
