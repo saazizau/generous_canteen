@@ -1,9 +1,9 @@
-var input_id = null;
-var input_date = null;
-var input_name = null;
-var input_price = null;
-var input_purchase = null;
-var input_qty = null;
+var input_id = document.getElementById('id');
+var input_date = document.getElementById('myDate');
+var input_name = document.getElementById('name');
+var input_price = document.getElementById('price');
+var input_purchase = document.getElementById('purchase');
+var input_qty = document.getElementById('qty');
 
 var idItem = null;
 var nameItem = null;
@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function(){
     getItemId();
 
     input_id = document.getElementById('id');
-    input_date = document.getElementById('date');
+    input_date = document.getElementById('myDate');
     input_name = document.getElementById('name');
     input_price = document.getElementById('price');
     input_purchase = document.getElementById('purchase');
@@ -53,8 +53,8 @@ function addItem(){
         .then(response=>response.json())
         .then(data => {
             if(data['status'] == 'success'){
-                showAlertW(`${data['massage']}`, function(result){
-                    
+                console.log("HEHEHE");
+                showAlert(`${data['massage']}`, function(result){
                     if(result){
                         location.reload()
                     }
