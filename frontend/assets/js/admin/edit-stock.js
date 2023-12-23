@@ -49,11 +49,11 @@ function getDate(){
 
 function getUpdate() {
     console.log(kalender1.value);
-    var url = `http://localhost/generous canteen/api/item/get-purchase.php/?id=${idItem}`;
+    var url = `https://sabrinaazizaulia.com/generous canteen/api/item/get-purchase.php/?id=${idItem}`;
     fetch(url) 
     .then(response=>response.json())
     .then(data => {
-        var url = `http://localhost/generous canteen/api/item/edit.php/?id=${idItem}&name=${input_name.value}&price=${input_price.value}&qty=${input_qty.value}&date=${kalender1.value}&purchase=${data['purchase']}`;
+        var url = `https://sabrinaazizaulia.com/generous canteen/api/item/edit.php/?id=${idItem}&name=${input_name.value}&price=${input_price.value}&qty=${input_qty.value}&date=${kalender1.value}&purchase=${data['purchase']}`;
         fetch(url)
         .then(response=>response.json())
         .then(data => {

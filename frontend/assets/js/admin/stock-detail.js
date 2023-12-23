@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function(){
 kalender.addEventListener('change', print());
 
 function getItemData() {
-    var url = `http://localhost/generous canteen/api/supply/get-detail.php/?date=${kalender.value}`
+    var url = `https://sabrinaazizaulia.com/generous canteen/api/supply/get-detail.php/?date=${kalender.value}`
     fetch(url)
     .then(response=>response.json())
     .then(data=>{

@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
 
 function getItemData() {
-    var url = "http://localhost/generous canteen/api/item/get-avaliable.php/"
+    var url = "https://sabrinaazizaulia.com/generous canteen/api/item/get-avaliable.php/"
     fetch(url)
     .then(response=>response.json())
     .then(data=>{
@@ -66,7 +66,7 @@ function getDate(){
 }
 
 function getCash(){
-    var url = `http://localhost/generous canteen/api/sales/get-price.php/?date=${getDate()}`;
+    var url = `https://sabrinaazizaulia.com/generous canteen/api/sales/get-price.php/?date=${getDate()}`;
     fetch(url)
     .then(response=>response.json())
     .then(data=>{
@@ -94,7 +94,7 @@ function setCash(){
     showConfirm('Yakin ingin menyimpan data?', function(result){
         if(result){
             var cash = document.getElementById('Cash-input').value;
-            var url = `http://localhost/generous canteen/api/sales/set.php/?date=${getDate()}&price=${cash}`;
+            var url = `https://sabrinaazizaulia.com/generous canteen/api/sales/set.php/?date=${getDate()}&price=${cash}`;
             fetch(url)
             .then(response=>response.json())
             .then(data=>{

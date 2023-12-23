@@ -48,7 +48,7 @@ function getDate(){
 
 function addItem(){
     if (validation()){
-        var url = `http://localhost/generous canteen/api/item/add.php/?id=${idItem}&name=${input_name.value}&price=${input_price.value}&qty=${input_qty.value}&date=${kalender.value}&purchase=${input_purchase.value}`;
+        var url = `https://sabrinaazizaulia.com/generous canteen/api/item/add.php/?id=${idItem}&name=${input_name.value}&price=${input_price.value}&qty=${input_qty.value}&date=${kalender.value}&purchase=${input_purchase.value}`;
         fetch(url)
         .then(response=>response.json())
         .then(data => {
@@ -94,7 +94,7 @@ function validation(){
 }
 
 async function getItemId(){
-    var url = "http://localhost/generous canteen/api/item/get-newest-id.php/"
+    var url = "https://sabrinaazizaulia.com/generous canteen/api/item/get-newest-id.php/"
     fetch(url)
         .then(response => response.json())
         .then(data => {

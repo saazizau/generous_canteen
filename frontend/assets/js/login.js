@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
 function getLogin(){
     var level = (localStorage.getItem('extentionAsk') == 'Admin') ? 1 : 2;
-    var url = `http://localhost/generous canteen/api/login.php/?username=${usernamePlace.value}&password=${passwordPlace.value}&level=${level}`;
+    var url = `https://sabrinaazizaulia.com/generous canteen/api/login.php/?username=${usernamePlace.value}&password=${passwordPlace.value}&level=${level}`;
     fetch(url)
     .then(response => response.json())
     .then(data => {

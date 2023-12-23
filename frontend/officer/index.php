@@ -3,11 +3,11 @@
 session_start();
 
 if(!isset($_SESSION['level'])){
-    header("Location: http://localhost/generous canteen/frontend/login.php");
+    header("Location: https://sabrinaazizaulia.com/generous canteen/frontend/login.php");
 }
 if($_SESSION['level'] != 2){
     echo "<script>showAlert('Wops! Anda bukan admin, silahkan login sebagai admin terlebih dahulu!')</script>";
-    header("Location: http://localhost/generous canteen/api/logout.php");
+    header("Location: https://sabrinaazizaulia.com/generous canteen/api/logout.php");
 }
 
 ?>

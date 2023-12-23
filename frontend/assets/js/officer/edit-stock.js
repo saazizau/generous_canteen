@@ -42,11 +42,11 @@ function getDate(){
 
 function getReport() {
     if(validation()){
-        var url = `http://localhost/generous canteen/api/item/get.php/?itemId=${idItem}`;
+        var url = `https://sabrinaazizaulia.com/generous canteen/api/item/get.php/?itemId=${idItem}`;
         fetch(url) 
         .then(response=>response.json())
         .then(data => {
-            var url = `http://localhost/generous canteen/api/item/edit.php/?id=${idItem}&name=${input_name.value}&price=${data[0]['price']}&qty=${input_qty.value}&date=${kalender1.value}&purchase=${data[0]['purchase']}`;
+            var url = `https://sabrinaazizaulia.com/generous canteen/api/item/edit.php/?id=${idItem}&name=${input_name.value}&price=${data[0]['price']}&qty=${input_qty.value}&date=${kalender1.value}&purchase=${data[0]['purchase']}`;
             fetch(url)
             .then(response=>response.json())
             .then(data => {

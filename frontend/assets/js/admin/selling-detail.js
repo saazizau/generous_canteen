@@ -17,7 +17,7 @@ kalender.addEventListener('change', function(){
 
 function getItemData() {
     rowData.innerHTML = ``;
-    var url = `http://localhost/generous canteen/api/sales/get.php/?date=${kalender.value}`
+    var url = `https://sabrinaazizaulia.com/generous canteen/api/sales/get.php/?date=${kalender.value}`
     fetch(url)
     .then(response=>response.json())
     .then(data=>{
@@ -43,7 +43,7 @@ function getItemData() {
 
 function getPrice(){
     var totSel = document.getElementById("TotalSell");
-    var url = `http://localhost/generous canteen/api/sales/get-price.php/?date=${kalender.value}`;
+    var url = `https://sabrinaazizaulia.com/generous canteen/api/sales/get-price.php/?date=${kalender.value}`;
     console.log(url);
     fetch(url)
     .then(response=>response.json())

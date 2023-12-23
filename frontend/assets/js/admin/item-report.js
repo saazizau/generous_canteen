@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
 
 function getItemData() {
-    var url = "http://localhost/generous canteen/api/item/get.php/"
+    var url = "https://sabrinaazizaulia.com/generous canteen/api/item/get.php/"
     fetch(url)
     .then(response=>response.json())
     .then(data=>{
@@ -58,7 +58,7 @@ function deleteItem(trashcan){
     showConfirm(`Yakin untuk menghapus item ${row.cells[1].textContent}`, function(result){
         console.log(result);
         if(result){
-            url = `http://localhost/generous canteen/api/item/delete.php/?id=${row.cells[0].textContent}`;
+            url = `https://sabrinaazizaulia.com/generous canteen/api/item/delete.php/?id=${row.cells[0].textContent}`;
             fetch(url)
             .then(response=>response.json())
             .then(data=>{

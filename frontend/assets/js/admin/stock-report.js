@@ -21,7 +21,7 @@ function getView(button){
 
 
 function getItemData() {
-    var url = "http://localhost/generous canteen/api/supply/get.php/"
+    var url = "https://sabrinaazizaulia.com/generous canteen/api/supply/get.php/"
     fetch(url)
     .then(response=>response.json())
     .then(data=>{
@@ -58,7 +58,7 @@ function deleteItem(trashcan){
     var row = trashcan.parentNode.parentNode;
     showConfirm(`Yakin untuk menghapus item ${row.cells[1].textContent}`, function(result){
         if(result){
-            url = `http://localhost/generous canteen/api/supply/delete.php/?id=${row.cells[0].textContent}`;
+            url = `https://sabrinaazizaulia.com/generous canteen/api/supply/delete.php/?id=${row.cells[0].textContent}`;
             fetch(url)
             .then(response=>response.json())
             .then(data=>{
